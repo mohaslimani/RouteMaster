@@ -16,3 +16,8 @@ Meanwhile, the compiled output files will be generated in the `bin` folder by de
 ## Dependency Management
 
 The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+
+
+javac -cp ";lib\gson\gson-2.10.1.jar" --module-path lib\javafx-sdk-24.0.1\lib --add-modules javafx.controls,javafx.fxml Main.java .\layoutController.java .\lessonsController.java .\subLessonsController.java
+
+java -cp ";lib\gson\gson-2.10.1.jar" --module-path lib\javafx-sdk-24.0.1\lib --add-modules javafx.controls,javafx.fxml Main
