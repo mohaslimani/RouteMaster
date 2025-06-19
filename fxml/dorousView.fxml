@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<StackPane xmlns="http://javafx.com/javafx"
+           xmlns:fx="http://javafx.com/fxml"
+           fx:controller="lessonsController"
+           stylesheets="@../css/style.css"
+           id="rootPane"
+           styleClass="dorous">
+    <Pane fx:id="overlayPane" styleClass="gray-overlay"/>
+    <AnchorPane>
+        <Button AnchorPane.leftAnchor="20" AnchorPane.topAnchor="20" text="رجوع" onAction="#goBack"/>
+        <HBox fx:id="rightButtonsBox"
+                AnchorPane.topAnchor="0"
+                AnchorPane.bottomAnchor="0"
+                AnchorPane.rightAnchor="20"
+                spacing="30" alignment="CENTER_RIGHT">
+                <VBox alignment="CENTER" spacing="20">
+                    <Button text="خاص بالصنف ج (C)" prefWidth="200" styleClass="C" onAction="#goToSubLessons"/>
+                    <Button text="خاص بالصنف د (D)" prefWidth="200" styleClass="D" onAction="#goToSubLessons"/>
+                    <Button text="خاص بالصنف ه-ج (EC)" prefWidth="200" styleClass="EC" onAction="#goToSubLessons"/>
+                    <Button text="خاص بالصنف ه-د (ED)" prefWidth="200" styleClass="ED" onAction="#goToSubLessons"/>
+                </VBox>
+                <VBox alignment="CENTER" spacing="20">
+                    <Button text=" الطريق " prefWidth="250" styleClass="road" onAction="#goToSubLessons"/>
+                    <Button text="قواعد السير " prefWidth="250" styleClass="trafficRules" onAction="#goToSubLessons"/>
+                    <Button text="السائق" prefWidth="250" styleClass="driver" onAction="#goToSubLessons"/>
+                    <Button text="المركبة" prefWidth="250" styleClass="vehicle" onAction="#goToSubLessons"/>
+                    <Button text="المخالفات و العقوبات" prefWidth="250" styleClass="violations" onAction="#goToSubLessons"/>
+                </VBox>
+        </HBox>
+    </AnchorPane>
+
+
+</StackPane>

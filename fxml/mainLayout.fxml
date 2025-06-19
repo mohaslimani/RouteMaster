@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane xmlns="http://javafx.com/javafx"
+           xmlns:fx="http://javafx.com/fxml"
+           stylesheets="@../css/style.css"
+           id="rootPane"
+           fx:controller="layoutController"
+           prefWidth="600" prefHeight="400">
+     <Pane fx:id="overlayPane" styleClass="gray-overlay"/>
+           
+    <!-- VBox splits space vertically -->
+    <VBox spacing="0" prefWidth="Infinity" prefHeight="Infinity">
+        <Region VBox.vgrow="ALWAYS" />
+        <Region VBox.vgrow="ALWAYS" />
+        <AnchorPane>
+        <StackPane fx:id="bottomPane" VBox.vgrow="ALWAYS"
+        AnchorPane.rightAnchor="100" AnchorPane.bottomAnchor="100">
+            <VBox spacing="10" alignment="CENTER">
+                <Button text="دروس" onAction="#goToDorous"/>
+                <Button text="سلاسل قديمة" onAction="#handleClick"/>
+                <Button text="PERMINOU سلاسل" onAction="#handleClick"/>
+                <Button text="BANANE سلاسل" onAction="#handleClick"/>
+                <Button text="محاكاة الامتحان" onAction="#handleClick"/>
+            </VBox>
+        </StackPane>
+        </AnchorPane>
+
+    </VBox>
+
+</StackPane>

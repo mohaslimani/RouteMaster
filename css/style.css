@@ -1,0 +1,165 @@
+#rootPane {
+    -fx-background-image: url("../images/background.jpg");
+    -fx-background-size: cover;
+    -fx-background-position: center center;
+}
+.gray-overlay {
+    -fx-background-color: rgba(0, 0, 0, 0.4); /* 40% opaque gray */
+}
+
+
+#rootPane.second-view {
+    -fx-background-image: url("../images/background2.jpg");
+    -fx-background-size: cover;
+    -fx-background-position: center;
+}
+
+#rootPane.dorous {
+    -fx-background-image: url("../images/background.jpg");
+    -fx-background-size: cover;
+    -fx-background-position: center;
+}
+
+/* General button styling */
+.button {
+    /* -fx-background-color: linear-gradient(to bottom, #4CAF50, #388E3C); */
+    -fx-background-color: linear-gradient(
+        from 0% 0% to 100% 0%,
+        rgba(68, 0, 255, 0.5),  /* red, 50% opacity */
+        rgba(0, 0, 255, 0.3)   /* blue, 30% opacity */
+        );
+        -fx-text-fill: white;
+        -fx-font-size: 16px;
+        -fx-font-weight: bold;
+        -fx-padding: 10 20;
+        -fx-background-radius: 8;
+        -fx-border-radius: 8;
+        -fx-border-color: transparent;
+        -fx-cursor: hand;
+        -fx-effect: dropshadow(three-pass-box, rgb(0, 0, 0), 5, 0.0, 0, 2);
+}
+    
+/* Hover effect */
+.button:hover {
+    -fx-background-color: linear-gradient(to bottom, #66BB6A, #43A047);
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 7, 0.0, 0, 3);
+}
+
+/* Pressed effect */
+.button:pressed {
+    -fx-background-color: linear-gradient(to bottom, #388E3C, #2E7D32);
+    -fx-translate-y: 1;
+}
+
+
+/*  */
+
+.road {
+    -fx-background-image: url("../assets/lessons/road/road.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+}
+
+.trafficRules {
+    -fx-background-image: url('../assets/lessons/trafficRules/trafficRules.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: contain;
+    -fx-background-position: top right;
+    -fx-background-size: auto 100%;
+}
+
+.driver {
+    -fx-background-image: url('../assets/lessons/driver/driver.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+    -fx-background-position: top right;
+    -fx-background-size: auto 100%;
+}
+
+.vehicle {
+    -fx-background-image: url('../assets/lessons/vehicle/vehicle.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+    -fx-background-position: top right;
+    -fx-background-size: auto 100%;
+}
+
+.violations {
+    -fx-background-image: url('../assets/lessons/violations/violations.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+    -fx-background-position: top right;
+    -fx-background-size: auto 100%;
+}
+
+.C {
+    -fx-background-image: url('../assets/lessons/C/C.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+    -fx-background-position: top right;
+    -fx-background-size: 50% 100%;
+}
+
+.D {
+    -fx-background-image: url('../assets/lessons/D/D.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+    -fx-background-position: top right;
+    -fx-background-size: 50% 100%;
+}
+
+.EC {
+    -fx-background-image: url('../assets/lessons/EC/EC.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+    -fx-background-position: top right;
+    -fx-background-size: auto 100%;
+}
+
+.ED {
+    -fx-background-image: url('../assets/lessons/ED/ED.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+    -fx-background-position: top right;
+    -fx-background-size: auto 100%;
+}
+
+/*  */
+.card {
+    -fx-background-color: linear-gradient(
+        from 0% 0% to 100% 0%,
+        rgba(68, 0, 255, 0.5),  /* red, 50% opacity */
+        rgba(0, 0, 255, 0.3)   /* blue, 30% opacity */
+        );
+    -fx-text-fill: white;
+    -fx-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-border-color: transparent;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, rgb(0, 0, 0), 5, 0.0, 0, 2);
+    -fx-pref-width: 150;
+    -fx-pref-height: 80;
+    -fx-background-color: #f0f0f0;
+    -fx-alignment: center;
+    -fx-padding: 20;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: contain;
+    -fx-background-position: top center;
+    -fx-background-size: 100% auto;
+}
+
+.card:hover {
+    -fx-background-color: linear-gradient(
+        from 0% 0% to 100% 0%,
+        rgba(100, 0, 255, 0.6),
+        rgba(0, 0, 255, 0.5)
+    );
+    -fx-border-color: #66ccff;
+    -fx-border-width: 1.5;
+    -fx-scale-x: 1.2;
+    -fx-scale-y: 1.2;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 10, 0.2, 0, 4);
+}
