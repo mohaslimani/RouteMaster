@@ -1,0 +1,1 @@
+javac -cp ";lib\gson\gson-2.10.1.jar" --module-path lib\javafx-sdk-24.0.1\lib --add-modules javafx.controls,javafx.media,javafx.fxml Main.java .\layoutController.java .\lessonsController.java .\subLessonsController.java .\groupsViewController.java .\qcmViewController.java .\scoreViewController.java .\selectedCorrectionViewController.java

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.control.Button?>
+
+<StackPane xmlns="http://javafx.com/javafx"
+           xmlns:fx="http://javafx.com/fxml"
+           fx:controller="layoutController"
+           stylesheets="@../css/style.css"
+           id="rootPane"
+           styleClass="second-view">
+           
+
+    <Button text="Back to First View" onAction="#goBack"/>
+</StackPane>

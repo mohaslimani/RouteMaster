@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+
+
+<ScrollPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="groupsViewController"
+            stylesheets="@../css/style.css"
+            fitToWidth="true"
+            fitToHeight="true"
+            pannable="true"
+            style="-fx-background:transparent;"
+            id="rootPane">
+    <content>
+        <StackPane alignment="CENTER">
+        <Pane fx:id="overlayPane" styleClass="darkGray-overlay"/>
+            <FlowPane fx:id="myFlowPane"
+                    hgap="10"
+                    vgap="10"
+                    alignment="CENTER"
+                    prefWrapLength="800">
+                <padding>
+                    <Insets top="20" right="50" bottom="20" left="50"/>
+                </padding>
+                <Button text="رجوع" onAction="#goBack"/>
+                <Button text="import" onAction="#chooseFolder"/>
+            </FlowPane>
+        </StackPane>
+    </content>
+</ScrollPane>

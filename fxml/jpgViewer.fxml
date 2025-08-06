@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.control.ScrollPane?>
+
+<StackPane xmlns="http://javafx.com/javafx"
+           xmlns:fx="http://javafx.com/fxml"
+           fx:controller="jpgViewerController"
+           stylesheets="@../css/style.css">
+
+    <ScrollPane fitToWidth="true" fitToHeight="true" pannable="true" hbarPolicy="NEVER" fx:id="scrollPane">
+        <Group>
+            <ImageView preserveRatio="true" fx:id="imageView">
+                <image>
+                    <Image url="/assets/lessons/road/1.jpg" />
+                </image>
+            </ImageView>
+        </Group>
+    </ScrollPane>
+    <Button text="رجوع" StackPane.alignment="TOP_LEFT" onAction="#goBack">
+        <StackPane.margin>
+            <Insets top="20" left="20"/>
+        </StackPane.margin>
+    </Button>
+</StackPane>

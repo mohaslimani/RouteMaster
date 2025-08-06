@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<StackPane xmlns="http://javafx.com/javafx"
+           xmlns:fx="http://javafx.com/fxml"
+           stylesheets="@../css/style.css"
+           id="rootPane"
+           fx:controller="selectedCorrectionViewController">
+     <Pane fx:id="overlayPane" styleClass="darkGray-overlay"/>
+     <GridPane fx:id="overlayPane" hgap="10" vgap="10">
+        <padding>
+            <Insets top="20" right="20" bottom="20" left="20"/>
+        </padding>
+
+        <!-- ✅ Column Constraints go here -->
+        <columnConstraints>
+            <ColumnConstraints percentWidth="74"/>
+            <ColumnConstraints percentWidth="1"/>
+            <ColumnConstraints percentWidth="25"/>
+        </columnConstraints>
+
+        <!-- ✅ Row Constraints go here -->
+        <rowConstraints>
+            <RowConstraints percentHeight="74"/>
+            <RowConstraints percentHeight="1"/>
+            <RowConstraints percentHeight="25"/>
+        </rowConstraints>
+
+        <!-- ✅ Actual nodes go here -->
+        <Pane fx:id="card1" styleClass="grid" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.rowSpan="3"/>
+
+        <Pane fx:id="card2" styleClass="grid" GridPane.columnIndex="2" GridPane.rowIndex="0">
+            <VBox fillWidth="true" fx:id="cardContainer" spacing="10" alignment="CENTER">
+                <padding> <Insets top="20" right="20" bottom="20" left="20"/> </padding>
+                <Button styleClass="smallCard" fx:id="selectedTxt" text="___    ___    ___    ___"/>
+                <Button styleClass="smallCard" fx:id="correct" text=" تصحيح "/>
+                <Button styleClass="smallCard" fx:id="one" text="1"/>
+                <Button styleClass="smallCard" fx:id="two" text="2"/>
+                <Button styleClass="smallCard" fx:id="three" text="3"/>
+                <Button styleClass="smallCard" fx:id="four" text="4"/>
+                <Button styleClass="smallCard" onAction="#onConfirm" fx:id="confirm" text=" تأكيد "/>
+            </VBox>
+        </Pane>
+
+        <StackPane fx:id="card3" styleClass="grid" GridPane.columnIndex="2" GridPane.rowIndex="2">
+            <GridPane GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS" hgap="1" vgap="1">
+                <columnConstraints>
+                    <ColumnConstraints percentWidth="50"/>
+                    <ColumnConstraints percentWidth="50"/>
+                </columnConstraints>
+                <rowConstraints>
+                    <RowConstraints percentHeight="50"/>
+                    <RowConstraints percentHeight="50"/>
+                </rowConstraints>
+
+                <Pane styleClass="smallCard" fx:id="questionNumber" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.ColumnSpan="2"> 
+                    <Label fx:id="questionNumberLabel" text="1" styleClass="question-number-label"/>
+                </Pane>
+                <Pane styleClass="smallCard" fx:id="countdown" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                    <Label fx:id="countdownLabel" text="30" styleClass="countdown-label"/>
+                </Pane>
+                <Pane styleClass="smallCard" fx:id="audioIn" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+            <!-- <Label fx:id="countdownLabel" text="30" styleClass="countdown-label"/> -->
+            <!-- countdown / audio exist ? / question number -->
+            </GridPane>
+        </StackPane>
+
+    </GridPane>
+</StackPane>
